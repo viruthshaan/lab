@@ -31,6 +31,11 @@ struct Graph{
 
 
     }
+    void addedgealtered(int u, int v){
+        //select node u and push v into u's neighbour
+     nodes[u-1].neighbours.push_back(v);
+     
+    }
 
     void print(){
         //lets iterate through each node and print its neighbours
